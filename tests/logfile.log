@@ -1,0 +1,61 @@
+2024-09-25 14:39:49,289 :INFO : test_checkout :Shop Icon clicked successfully
+2024-09-25 14:39:51,405 :INFO : test_checkout :Shop All link clicked successfully
+2024-09-25 14:39:51,435 :INFO : test_checkout :Switched to Category all successfully
+2024-09-25 14:41:19,155 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-09-25 14:41:35,476 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-09-25 14:41:46,301 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-09-25 14:41:52,972 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-09-25 14:41:54,462 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-09-25 14:41:54,487 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-09-25 14:43:17,701 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-09-25 14:43:44,479 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-09-25 14:43:56,022 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-09-25 14:43:57,333 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-09-25 14:44:08,782 :INFO : test_checkout :Illinois Billing address selected successfully
+2024-09-25 14:44:09,644 :INFO : test_checkout :Business Name entered successfully
+2024-09-25 14:44:11,897 :INFO : test_checkout :Pickup address selected successfully
+2024-09-25 14:44:17,959 :INFO : test_checkout :Credit card payment method selected successfully
+2024-09-25 14:44:21,184 :INFO : test_checkout :Credit card number entered successfully
+2024-09-25 14:44:23,256 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-09-25 14:44:23,463 :INFO : test_checkout :Credit card cvc entered successfully
+2024-09-25 14:44:43,661 :INFO : test_checkout :Future payment saved successfully
+2024-09-25 14:45:14,061 :INFO : test_checkout :Pay now button clicked successfully
+2024-09-25 14:45:14,061 :INFO : test_checkout :Order placed successfully
+2024-09-25 17:05:08,409 :INFO : test_checkout :Shop Icon clicked successfully
+2024-09-25 17:05:10,960 :INFO : test_checkout :Shop All link clicked successfully
+2024-09-25 17:05:10,987 :INFO : test_checkout :Switched to Category all successfully
+2024-09-25 17:06:31,001 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-09-25 17:06:54,939 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-09-25 17:07:05,075 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-09-25 17:07:11,232 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-09-25 17:07:12,891 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-09-25 17:07:12,920 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-09-25 17:08:37,376 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-09-25 17:09:01,131 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-09-25 17:09:13,111 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-09-25 17:09:14,964 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-09-25 17:09:26,161 :INFO : test_checkout :Illinois Billing address selected successfully
+2024-09-25 17:09:26,725 :INFO : test_checkout :Different Address button clicked successfully
+2024-09-25 17:09:36,252 :INFO : test_checkout :Different shipping address entered successfully
+2024-09-25 17:14:56,634 :INFO : test_checkout :Shop Icon clicked successfully
+2024-09-25 17:14:58,697 :INFO : test_checkout :Shop All link clicked successfully
+2024-09-25 17:14:58,723 :INFO : test_checkout :Switched to Category all successfully
+2024-09-25 17:17:14,715 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-09-25 17:18:05,949 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-09-25 17:19:03,145 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-09-25 17:19:21,968 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-09-25 17:19:23,681 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-09-25 17:19:23,728 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-09-25 17:21:30,473 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-09-25 17:22:35,639 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-09-25 17:22:52,139 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-09-25 17:22:52,587 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-09-25 17:23:01,357 :INFO : test_checkout :Illinois Billing address selected successfully
+2024-09-25 17:23:02,630 :INFO : test_checkout :Business Name entered successfully
+2024-09-25 17:23:03,585 :INFO : test_checkout :Different Address button clicked successfully
+2024-09-25 17:23:13,242 :INFO : test_checkout :Different shipping address entered successfully
+2024-09-25 17:23:13,428 :INFO : test_checkout :Pickup address selected successfully
+2024-09-25 17:23:19,990 :INFO : test_checkout :Credit card payment method selected successfully
+2024-09-25 17:23:26,714 :INFO : test_checkout :Credit card number entered successfully
+2024-09-25 17:23:26,992 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-09-25 17:23:27,226 :INFO : test_checkout :Credit card cvc entered successfully
