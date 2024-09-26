@@ -26,8 +26,11 @@ class Test_NSLA(BaseClass):
         # Selecting Carlisle ST1 Air Purge D-02 Spray Gun
         checkout.foam_gun_product()
 
+        # Close the Shadow host button
+        checkout.shadow_close()
+
         # Add Spray Gun to cart
-        checkout.cart_add_gun()
+        checkout.cart_add_button()
 
         # Click on shop button for liquid items
         checkout.shop_icon()

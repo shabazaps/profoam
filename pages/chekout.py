@@ -1,12 +1,15 @@
 import time
 
+from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC, wait
 
+from utilities.logger import BaseClass
 
-class Checkout:
+
+class Checkout(BaseClass):
     login_button = (By.XPATH, "//span[normalize-space()='Login']")
     username = (By.XPATH, "//input[@id='email']")
     pas = (By.XPATH, "//input[@id='password']")
@@ -22,7 +25,7 @@ class Checkout:
     add_cart_button = (By.XPATH, "//button[@class='product_details_main_cart_btn btn-fill-out btn-addtocart']")
 
     cleaning_solvent = (By.XPATH, "//a[.='Cleaning Solvents']")
-    cleaning_product = (By.XPATH,"//a[normalize-space()='Dynasolve CU-6 1g']")
+    cleaning_product = (By.XPATH, "//a[normalize-space()='Dynasolve CU-6 1g']")
     proceed_checkout = (By.XPATH, "//a[@class='btn btn-fill-out btn-proceed']")
     billing_address = (By.XPATH, "//label[@for='1228']")
     pickup_address = (By.XPATH, "//input[@name='shipping_method_sp']")
@@ -30,35 +33,42 @@ class Checkout:
     business_name = (By.XPATH, "//input[@id='business_name']")
     shipping_method = (By.XPATH, "//input[@name='shipping_method_ups'][1]")
     pay_cc = (By.XPATH, "//span[@id='pnc']")
-    num_frame=(By.XPATH,"//iframe[@title='Secure card number input frame']")
+    num_frame = (By.XPATH, "//iframe[@title='Secure card number input frame']")
     cc_number = (By.XPATH, "//input[@data-elements-stable-field-name='cardNumber']")
-    exp_frame= (By.XPATH, "//iframe[@title='Secure expiration date input frame']")
-    cc_expiry = (By.XPATH,"//input[@data-elements-stable-field-name='cardExpiry']")
+    exp_frame = (By.XPATH, "//iframe[@title='Secure expiration date input frame']")
+    cc_expiry = (By.XPATH, "//input[@data-elements-stable-field-name='cardExpiry']")
     cvc_frame = (By.XPATH, "//iframe[@title='Secure CVC input frame']")
-    cc_cvc = (By.XPATH,"//input[@data-elements-stable-field-name='cardCvc']")
-    save_future = (By.XPATH,"//input[@id='remembercc']")
-    pay_now = (By.XPATH,"//button[@id='pay_using_new_card']")
+    cc_cvc = (By.XPATH, "//input[@data-elements-stable-field-name='cardCvc']")
+    save_future = (By.XPATH, "//input[@id='remembercc']")
+    pay_now = (By.XPATH, "//button[@id='pay_using_new_card']")
 
     brand_drop = (By.ID, 'profoambrand')
-    ncfi_item = (By.XPATH,"//a[normalize-space() = 'NCFI 2.0# HFO Closed Cell Fast Foam']")
+    ncfi_item = (By.XPATH, "//a[normalize-space() = 'NCFI 2.0# HFO Closed Cell Fast Foam']")
 
-    accufoam_product = (By.XPATH,"//a[normalize-space()='Accufoam 1.7# HFC Closed Cell Foam']")
-    accufoam_cart_button = (By.XPATH,"//button[@class='product_details_main_cart_btn btn-fill-out btn-addtocart']")
-    accufoam_residential = (By.XPATH,"//input[@value='residential']")
-    accufoam_lift = (By.XPATH,"//input[@id='lgd_yes']")
-    accufoam_shipcharge = (By.XPATH,"//input[@value='SOUTHEASTERN FREIGHT LINES, INC. (Logistics Fox, Inc (TSM)) - 338.38']")
+    accufoam_product = (By.XPATH, "//a[normalize-space()='Accufoam 1.7# HFC Closed Cell Foam']")
+    accufoam_cart_button = (By.XPATH, "//button[@class='product_details_main_cart_btn btn-fill-out btn-addtocart']")
+    accufoam_residential = (By.XPATH, "//input[@value='residential']")
+    accufoam_lift = (By.XPATH, "//input[@id='lgd_yes']")
+    accufoam_shipcharge = (
+    By.XPATH, "//input[@value='SOUTHEASTERN FREIGHT LINES, INC. (Logistics Fox, Inc (TSM)) - 338.38']")
 
-    ship_daddress = (By.XPATH,"//label[@class='form-check-label label_info']")
-    ship_fname = (By.XPATH,"//input[@name='different_shipping_fname']")
-    ship_lname = (By.XPATH,"//input[@name='different_shipping_lname']")
-    ship_add1=(By.XPATH,"//input[@id='different_shipping_address']")
-    ship_add2=(By.XPATH,"//input[@id='different_shipping_address2']")
-    ship_city = (By.XPATH,"//input[@id='different_shipping_city']")
-    ship_zip = (By.XPATH,"//input[@id='different_shipping_zipcode']")
+    ship_daddress = (By.XPATH, "//label[@class='form-check-label label_info']")
+    ship_fname = (By.XPATH, "//input[@name='different_shipping_fname']")
+    ship_lname = (By.XPATH, "//input[@name='different_shipping_lname']")
+    ship_add1 = (By.XPATH, "//input[@id='different_shipping_address']")
+    ship_add2 = (By.XPATH, "//input[@id='different_shipping_address2']")
+    ship_city = (By.XPATH, "//input[@id='different_shipping_city']")
+    ship_zip = (By.XPATH, "//input[@id='different_shipping_zipcode']")
 
     #////////////////////////
     # Negative test case
-    select_ups = (By.XPATH,"//span[text()='Please select a ups shipping charge.']")
+    select_ups = (By.XPATH, "//span[text()='Please select a ups shipping charge.']")
+
+    # available coupon button
+    coupon = (By.XPATH, "//a[@id='checkout-view-member-coupons']")
+    save99 = (By.XPATH, "//button[@data-coupon_code='save99']")
+    coupon_message = (By.XPATH, "//td[.='Coupon code is applied successfully']")
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -86,12 +96,14 @@ class Checkout:
     def foam_gun_product(self):
         return self.driver.find_element(*Checkout.foam_product).click()
 
-    def cart_add_gun(self):
+    def shadow_close(self):
         shadow_host = self.driver.find_element(By.CSS_SELECTOR, "chat-widget[location-id='ezamnLIXmzsU7b44Ya21']")
         shadow_root = shadow_host.shadow_root  # Access the shadow root directly
         close_button = shadow_root.find_element(By.CSS_SELECTOR, "button.lc_text-widget_prompt--prompt-close")
         close_button.click()
+        return
 
+    def cart_add_button(self):
         return self.driver.find_element(*Checkout.add_cart_button).click()
 
     def cleaning_solvent_option(self):
@@ -103,8 +115,6 @@ class Checkout:
     def add_cart_liquid(self):
         return self.driver.find_element(*Checkout.add_cart_button).click()
 
-
-
     def proceed_button(self):
         buttons = self.driver.find_elements(*Checkout.proceed_checkout)
         for button in buttons:
@@ -112,6 +122,7 @@ class Checkout:
             break
         return
         # return self.driver.find_element(*Checkout.proceed_checkout).click()
+
     def ship_billing_select(self):
         return self.driver.find_element(*Checkout.billing_address).click()
 
@@ -133,7 +144,8 @@ class Checkout:
     def cc_number_input(self):
         cc_iframe = self.driver.find_element(*Checkout.num_frame)
         self.driver.switch_to.frame(cc_iframe)
-        self.driver.find_element(By.XPATH,"//input[@data-elements-stable-field-name='cardNumber']").send_keys("4242424242424242")
+        self.driver.find_element(By.XPATH, "//input[@data-elements-stable-field-name='cardNumber']").send_keys(
+            "4242424242424242")
         self.driver.switch_to.default_content()
         time.sleep(3)
         return
@@ -141,14 +153,14 @@ class Checkout:
     def cc_expiry_input(self):
         cc_iframe = self.driver.find_element(*Checkout.exp_frame)
         self.driver.switch_to.frame(cc_iframe)
-        self.driver.find_element(By.XPATH,"//input[@data-elements-stable-field-name='cardExpiry']").send_keys("04/28")
+        self.driver.find_element(By.XPATH, "//input[@data-elements-stable-field-name='cardExpiry']").send_keys("04/28")
         self.driver.switch_to.default_content()
         return
 
     def cc_cvc_input(self):
         cc_iframe = self.driver.find_element(*Checkout.cvc_frame)
         self.driver.switch_to.frame(cc_iframe)
-        self.driver.find_element(By.XPATH,"//input[@data-elements-stable-field-name='cardCvc']").send_keys("123")
+        self.driver.find_element(By.XPATH, "//input[@data-elements-stable-field-name='cardCvc']").send_keys("123")
         self.driver.switch_to.default_content()
         return
 
@@ -187,16 +199,19 @@ class Checkout:
 
     def add_cart_accufoam(self):
         return self.driver.find_element(*Checkout.accufoam_cart_button).click()
+
     def accufoam_all_extras(self):
         self.driver.find_element(*Checkout.accufoam_residential).click()
         self.driver.find_element(*Checkout.accufoam_lift).click()
         self.driver.find_element(*Checkout.accufoam_shipcharge).click()
         return
+
     def diff_address(self):
         return self.driver.find_element(*Checkout.ship_daddress).click()
 
     def ship_fname_input(self):
         return self.driver.find_element(*Checkout.ship_fname).send_keys("John")
+
     def ship_lname_input(self):
         return self.driver.find_element(*Checkout.ship_lname).send_keys("Doe")
 
@@ -244,5 +259,43 @@ class Checkout:
             EC.visibility_of_element_located((By.XPATH, "//button[@id='pay_using_new_card']"))
         )
         element.click()
+        return
+
+    def coupon_button(self):
+        self.driver.find_element(*Checkout.coupon).click()
+        logger = self.test_logger()
+        logger.info("Clicked on coupon button Successfully")
+
+    # //button[@data-coupon_code='save99']
+
+    def save99_coupon(self):
+        logger = self.test_logger()
+
+        # Enter the coupon code into the input field
+        self.driver.find_element(By.XPATH, "//input[@id='coupon_code']").send_keys("save99")
+        logger.info("Entered coupon code: save99")
+
+        # Click the 'Apply Coupon' button
+        self.driver.find_element(By.XPATH, "//button[@id='order_review_apply_coupon']").click()
+        logger.info("Clicked on 'Apply Coupon' button")
+
+        # Handle the alert
+        time.sleep(3)
+        try:
+            alert = WebDriverWait(self.driver, 10).until(EC.alert_is_present())
+            alert_text = alert.text
+            logger.info(f"Alert says: {alert_text}")
+            alert.accept()
+            logger.info("Alert accepted")
+        except TimeoutException:
+            logger.error("No alert appeared after applying the coupon")
+            return
+
+        # Validate the success message
+        # expected_message = "Coupon code is applied successfully"
+        # actual_message = self.driver.find_element(*Checkout.coupon_message).text
+        # assert expected_message == actual_message, f"Expected: {expected_message}, Actual: {actual_message}"
+        logger.info("Coupon applied successfully")
+
         return
 

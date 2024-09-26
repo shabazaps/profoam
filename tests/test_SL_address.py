@@ -33,8 +33,10 @@ class Test_Checkout(BaseClass):
         checkout.foam_gun_product()
         logger.info("Carlisle ST1 Air Purge D-02 Spray Gun selected successfully")
 
+        # Close the Shadow host button
+        checkout.shadow_close()
         # Add Spray Gun to cart
-        checkout.cart_add_gun()
+        checkout.cart_add_button()
         logger.info("Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully")
 
         # Click on shop button for liquid items
