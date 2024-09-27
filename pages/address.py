@@ -2,8 +2,10 @@ import time
 
 from selenium.webdriver.common.by import By
 
+from utilities.logger import BaseClass
 
-class Address:
+
+class Address(BaseClass):
 
     profile= (By.XPATH,"//i[@class='fa fa-user']")
     my_address= (By.XPATH,"//a[@aria-controls='address']")
