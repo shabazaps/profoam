@@ -351,3 +351,203 @@ Do you want to continue?
 2024-09-27 18:47:17,092 :INFO : test_editprofile :Profile icon clicked successfully
 2024-09-27 18:47:20,163 :INFO : test_editprofile :Edit profile clicked successfully
 2024-09-27 18:47:21,004 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 12:13:51,841 :INFO : test_sl_coupon :Shop Icon clicked successfully
+2024-09-30 12:13:54,309 :INFO : test_sl_coupon :Shop All link clicked successfully
+2024-09-30 12:13:54,320 :INFO : test_sl_coupon :Switched to Category all successfully
+2024-09-30 12:15:09,572 :INFO : test_sl_coupon :Foam Guns from side menu clicked successfully
+2024-09-30 12:15:28,296 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-09-30 12:15:35,968 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-09-30 12:15:36,640 :INFO : test_sl_coupon :Proceed to checkout clicked successfully
+2024-09-30 12:15:44,166 :INFO : test_sl_coupon :Illinois Billing address selected successfully
+2024-09-30 12:15:48,353 :INFO : test_sl_coupon :Pickup address selected successfully
+2024-09-30 12:15:51,297 :INFO : test_sl_coupon :Business Name entered successfully
+2024-09-30 12:18:30,321 :INFO : test_sl_coupon :Shop Icon clicked successfully
+2024-09-30 12:18:32,882 :INFO : test_sl_coupon :Shop All link clicked successfully
+2024-09-30 12:18:32,895 :INFO : test_sl_coupon :Switched to Category all successfully
+2024-09-30 12:20:25,167 :INFO : test_sl_coupon :Foam Guns from side menu clicked successfully
+2024-09-30 12:20:56,485 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-09-30 12:21:08,514 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-09-30 12:21:09,369 :INFO : test_sl_coupon :Proceed to checkout clicked successfully
+2024-09-30 12:21:16,849 :INFO : test_sl_coupon :Illinois Billing address selected successfully
+2024-09-30 12:21:20,561 :INFO : test_sl_coupon :Pickup address selected successfully
+2024-09-30 12:21:24,559 :INFO : test_sl_coupon :Business Name entered successfully
+2024-09-30 12:21:43,020 :INFO : save99_coupon :Alert says: This coupon doesn't have permission to apply with other discount.
+Applying this coupon code will remove discounts from the items in cart.
+Do you want to continue?
+2024-09-30 12:21:43,026 :INFO : save99_coupon :Alert accepted
+2024-09-30 12:21:43,026 :INFO : save99_coupon :Coupon applied successfully
+2024-09-30 13:14:10,573 :INFO : test_sl_coupon :Shop Icon clicked successfully
+2024-09-30 13:14:12,650 :INFO : test_sl_coupon :Shop All link clicked successfully
+2024-09-30 13:14:12,685 :INFO : test_sl_coupon :Switched to Category all successfully
+2024-09-30 13:15:36,243 :INFO : test_sl_coupon :Foam Guns from side menu clicked successfully
+2024-09-30 13:15:55,884 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-09-30 13:16:06,299 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-09-30 13:16:07,369 :INFO : test_sl_coupon :Proceed to checkout clicked successfully
+2024-09-30 13:16:17,002 :INFO : test_sl_coupon :Illinois Billing address selected successfully
+2024-09-30 13:16:21,130 :INFO : test_sl_coupon :Pickup address selected successfully
+2024-09-30 13:16:24,102 :INFO : test_sl_coupon :Business Name entered successfully
+2024-09-30 13:16:40,539 :INFO : save99_coupon :Alert says: This coupon doesn't have permission to apply with other discount.
+Applying this coupon code will remove discounts from the items in cart.
+Do you want to continue?
+2024-09-30 13:16:40,544 :INFO : save99_coupon :Alert accepted
+2024-09-30 13:16:40,545 :INFO : save99_coupon :Coupon applied successfully
+2024-09-30 13:19:56,636 :INFO : test_sl_coupon :Shop Icon clicked successfully
+2024-09-30 13:19:59,362 :INFO : test_sl_coupon :Shop All link clicked successfully
+2024-09-30 13:19:59,396 :INFO : test_sl_coupon :Switched to Category all successfully
+2024-09-30 13:21:23,386 :INFO : test_sl_coupon :Foam Guns from side menu clicked successfully
+2024-09-30 13:21:43,574 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-09-30 13:21:52,911 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-09-30 13:21:54,107 :INFO : test_sl_coupon :Proceed to checkout clicked successfully
+2024-09-30 13:22:02,274 :INFO : test_sl_coupon :Illinois Billing address selected successfully
+2024-09-30 13:22:04,958 :INFO : test_sl_coupon :Pickup address selected successfully
+2024-09-30 13:22:06,124 :INFO : test_sl_coupon :Business Name entered successfully
+2024-09-30 13:22:32,112 :ERROR : save99_coupon :No alert appeared after applying the coupon
+2024-09-30 15:09:23,632 :INFO : test_sl_coupon :Shop Icon clicked successfully
+2024-09-30 15:09:26,371 :INFO : test_sl_coupon :Shop All link clicked successfully
+2024-09-30 15:09:26,397 :INFO : test_sl_coupon :Switched to Category all successfully
+2024-09-30 15:10:43,923 :INFO : test_sl_coupon :Foam Guns from side menu clicked successfully
+2024-09-30 15:11:00,995 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-09-30 15:11:08,520 :INFO : test_sl_coupon :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-09-30 15:11:09,291 :INFO : test_sl_coupon :Proceed to checkout clicked successfully
+2024-09-30 15:11:19,063 :INFO : test_sl_coupon :Illinois Billing address selected successfully
+2024-09-30 15:11:22,610 :INFO : test_sl_coupon :Pickup address selected successfully
+2024-09-30 15:11:23,830 :INFO : test_sl_coupon :Business Name entered successfully
+2024-09-30 15:11:41,301 :INFO : save99_coupon :Alert says: This coupon doesn't have permission to apply with other discount.
+Applying this coupon code will remove discounts from the items in cart.
+Do you want to continue?
+2024-09-30 15:11:41,307 :INFO : save99_coupon :Alert accepted
+2024-09-30 15:11:41,307 :INFO : save99_coupon :Coupon applied successfully
+2024-09-30 15:11:41,999 :INFO : test_sl_coupon :Credit card payment method selected successfully
+2024-09-30 15:11:45,247 :INFO : test_sl_coupon :Credit card number entered successfully
+2024-09-30 15:11:47,813 :INFO : test_sl_coupon :Credit card expiry date entered successfully
+2024-09-30 15:11:48,074 :INFO : test_sl_coupon :Credit card cvc entered successfully
+2024-09-30 16:26:22,445 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 16:26:24,913 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 16:26:25,410 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 16:29:26,167 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 16:29:28,798 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 16:29:29,395 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 16:29:29,786 :INFO : test_editprofile :First Name entered successfully
+2024-09-30 16:29:30,078 :INFO : test_editprofile :Last Name entered successfully
+2024-09-30 16:29:30,321 :INFO : test_editprofile :Email entered successfully
+2024-09-30 16:29:30,554 :INFO : test_editprofile :Mobile Number entered successfully
+2024-09-30 16:29:30,862 :INFO : test_editprofile :Business Name entered successfully
+2024-09-30 16:29:31,102 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-09-30 16:29:31,385 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-09-30 16:29:33,674 :INFO : test_editprofile :Country selected successfully
+2024-09-30 16:29:36,280 :INFO : test_editprofile :Province selected successfully
+2024-09-30 16:29:36,509 :INFO : test_editprofile :City entered successfully
+2024-09-30 16:29:36,691 :INFO : test_editprofile :Postal Code entered successfully
+2024-09-30 16:29:36,888 :INFO : test_editprofile :Update button clicked successfully
+2024-09-30 16:32:14,347 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 16:32:17,501 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 16:32:18,067 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 16:32:18,170 :INFO : test_editprofile :First Name entered successfully
+2024-09-30 16:32:23,343 :INFO : test_editprofile :Last Name entered successfully
+2024-09-30 16:32:23,522 :INFO : test_editprofile :Email entered successfully
+2024-09-30 16:32:23,668 :INFO : test_editprofile :Mobile Number entered successfully
+2024-09-30 16:32:23,877 :INFO : test_editprofile :Business Name entered successfully
+2024-09-30 16:32:24,071 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-09-30 16:32:24,230 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-09-30 16:32:26,416 :INFO : test_editprofile :Country selected successfully
+2024-09-30 16:32:28,914 :INFO : test_editprofile :Province selected successfully
+2024-09-30 16:32:29,083 :INFO : test_editprofile :City entered successfully
+2024-09-30 16:32:29,265 :INFO : test_editprofile :Postal Code entered successfully
+2024-09-30 16:32:29,444 :INFO : test_editprofile :Update button clicked successfully
+2024-09-30 16:32:59,807 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 16:33:02,696 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 16:33:03,343 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 16:33:03,484 :INFO : test_editprofile :First Name entered successfully
+2024-09-30 16:33:08,659 :INFO : test_editprofile :Last Name entered successfully
+2024-09-30 16:33:08,873 :INFO : test_editprofile :Email entered successfully
+2024-09-30 16:33:09,000 :INFO : test_editprofile :Mobile Number entered successfully
+2024-09-30 16:33:09,225 :INFO : test_editprofile :Business Name entered successfully
+2024-09-30 16:33:09,461 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-09-30 16:33:09,705 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-09-30 16:33:11,889 :INFO : test_editprofile :Country selected successfully
+2024-09-30 16:33:14,304 :INFO : test_editprofile :Province selected successfully
+2024-09-30 16:33:14,491 :INFO : test_editprofile :City entered successfully
+2024-09-30 16:33:14,640 :INFO : test_editprofile :Postal Code entered successfully
+2024-09-30 16:33:14,880 :INFO : test_editprofile :Update button clicked successfully
+2024-09-30 16:40:35,756 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 16:40:38,723 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 16:40:39,368 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 16:40:39,546 :INFO : test_editprofile :First Name entered successfully
+2024-09-30 16:40:44,717 :INFO : test_editprofile :Last Name entered successfully
+2024-09-30 16:40:44,884 :INFO : test_editprofile :Email entered successfully
+2024-09-30 16:40:45,024 :INFO : test_editprofile :Mobile Number entered successfully
+2024-09-30 16:40:45,247 :INFO : test_editprofile :Business Name entered successfully
+2024-09-30 16:40:45,516 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-09-30 16:40:45,720 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-09-30 16:40:47,927 :INFO : test_editprofile :Country selected successfully
+2024-09-30 16:40:50,478 :INFO : test_editprofile :Province selected successfully
+2024-09-30 16:40:50,766 :INFO : test_editprofile :City entered successfully
+2024-09-30 16:40:50,992 :INFO : test_editprofile :Postal Code entered successfully
+2024-09-30 16:40:51,260 :INFO : test_editprofile :Update button clicked successfully
+2024-09-30 16:41:57,892 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 16:42:00,572 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 16:42:01,344 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 16:42:01,546 :INFO : test_editprofile :First Name entered successfully
+2024-09-30 16:42:06,786 :INFO : test_editprofile :Last Name entered successfully
+2024-09-30 16:42:07,060 :INFO : test_editprofile :Email entered successfully
+2024-09-30 16:42:07,294 :INFO : test_editprofile :Mobile Number entered successfully
+2024-09-30 16:42:07,514 :INFO : test_editprofile :Business Name entered successfully
+2024-09-30 16:42:07,730 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-09-30 16:42:07,964 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-09-30 16:42:10,222 :INFO : test_editprofile :Country selected successfully
+2024-09-30 16:42:12,843 :INFO : test_editprofile :Province selected successfully
+2024-09-30 16:42:13,068 :INFO : test_editprofile :City entered successfully
+2024-09-30 16:42:13,241 :INFO : test_editprofile :Postal Code entered successfully
+2024-09-30 16:42:13,523 :INFO : test_editprofile :Update button clicked successfully
+2024-09-30 16:44:02,846 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 16:44:06,196 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 16:44:06,817 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 16:44:07,315 :INFO : test_editprofile :First Name entered successfully
+2024-09-30 16:44:12,522 :INFO : test_editprofile :Last Name entered successfully
+2024-09-30 16:44:12,746 :INFO : test_editprofile :Email entered successfully
+2024-09-30 16:44:12,880 :INFO : test_editprofile :Mobile Number entered successfully
+2024-09-30 16:44:13,123 :INFO : test_editprofile :Business Name entered successfully
+2024-09-30 16:44:13,424 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-09-30 16:44:13,655 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-09-30 16:44:15,832 :INFO : test_editprofile :Country selected successfully
+2024-09-30 16:44:18,452 :INFO : test_editprofile :Province selected successfully
+2024-09-30 16:44:18,680 :INFO : test_editprofile :City entered successfully
+2024-09-30 16:44:18,877 :INFO : test_editprofile :Postal Code entered successfully
+2024-09-30 16:44:19,095 :INFO : test_editprofile :Update button clicked successfully
+2024-09-30 16:44:19,139 :INFO : test_editprofile :First Name  assert successfully
+2024-09-30 16:48:20,840 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 16:48:23,347 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 16:48:24,026 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 16:48:24,222 :INFO : test_editprofile :First Name entered successfully
+2024-09-30 16:48:29,421 :INFO : test_editprofile :Last Name entered successfully
+2024-09-30 16:48:29,583 :INFO : test_editprofile :Email entered successfully
+2024-09-30 16:48:29,716 :INFO : test_editprofile :Mobile Number entered successfully
+2024-09-30 16:48:30,007 :INFO : test_editprofile :Business Name entered successfully
+2024-09-30 16:48:30,235 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-09-30 16:48:30,385 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-09-30 16:48:32,561 :INFO : test_editprofile :Country selected successfully
+2024-09-30 16:48:35,203 :INFO : test_editprofile :Province selected successfully
+2024-09-30 16:48:35,437 :INFO : test_editprofile :City entered successfully
+2024-09-30 16:48:35,653 :INFO : test_editprofile :Postal Code entered successfully
+2024-09-30 16:48:35,903 :INFO : test_editprofile :Update button clicked successfully
+2024-09-30 16:48:35,942 :INFO : test_editprofile :First Name  assert successfully
+2024-09-30 16:48:35,988 :INFO : test_editprofile :Mobile Number  assert successfully
+2024-09-30 17:12:37,384 :INFO : test_editprofile :Profile icon clicked successfully
+2024-09-30 17:12:40,578 :INFO : test_editprofile :Edit profile clicked successfully
+2024-09-30 17:12:41,060 :INFO : test_editprofile :Salutation selected as Professor
+2024-09-30 17:12:41,145 :INFO : test_editprofile :First Name entered successfully
+2024-09-30 17:12:46,262 :INFO : test_editprofile :Last Name entered successfully
+2024-09-30 17:12:46,397 :INFO : test_editprofile :Email entered successfully
+2024-09-30 17:12:46,534 :INFO : test_editprofile :Mobile Number entered successfully
+2024-09-30 17:12:46,729 :INFO : test_editprofile :Business Name entered successfully
+2024-09-30 17:12:46,943 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-09-30 17:12:47,078 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-09-30 17:12:49,218 :INFO : test_editprofile :Country selected successfully
+2024-09-30 17:12:51,687 :INFO : test_editprofile :Province selected successfully
+2024-09-30 17:12:51,879 :INFO : test_editprofile :City entered successfully
+2024-09-30 17:12:52,006 :INFO : test_editprofile :Postal Code entered successfully
+2024-09-30 17:12:52,190 :INFO : test_editprofile :Update button clicked successfully
+2024-09-30 17:12:52,236 :INFO : test_editprofile :First Name  assert successful
+2024-09-30 17:12:52,262 :INFO : test_editprofile :Email Address  assert successful
+2024-09-30 17:12:52,290 :INFO : test_editprofile :Mobile Number  assert successful
+2024-09-30 19:02:53,727 :INFO : test_checkout :Checkout test passed

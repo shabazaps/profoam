@@ -26,6 +26,7 @@ class Test_profile(BaseClass):
         # Enter First Name
         profile.first_name()
         logger.info("First Name entered successfully")
+        time.sleep(5)
 
         #enter Last Name
         profile.last_name()
@@ -74,3 +75,16 @@ class Test_profile(BaseClass):
         # Click on Update button
         profile.update_button()
         logger.info("Update button clicked successfully")
+
+        # Assert the first name
+        profile.checkFname()
+        logger.info("First Name  assert successful")
+
+        # Assert email Address
+        profile.check_email_address()
+        logger.info("Email Address  assert successful")
+
+        #Assert Mobile Number
+        profile.check_mobile_number()
+        logger.info("Mobile Number  assert successful")
+        time.sleep(10)

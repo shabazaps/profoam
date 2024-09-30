@@ -138,8 +138,10 @@ class Checkout(BaseClass):
         return self.driver.find_element(*Checkout.shipping_method).click()
 
     def pay_creditcard(self):
-        time.sleep(3)
-        return self.driver.find_element(*Checkout.pay_cc).click()
+        wait = WebDriverWait(self.driver, 10)  # Adjust timeout as necessary
+        pay_button = wait.until(EC.element_to_be_clickable(Checkout.pay_cc))  # Corrected line
+        pay_button.click()
+        # return self.driver.find_element(*Checkout.pay_cc).click()
 
     def cc_number_input(self):
         cc_iframe = self.driver.find_element(*Checkout.num_frame)
@@ -269,16 +271,21 @@ class Checkout(BaseClass):
     # //button[@data-coupon_code='save99']
 
     def save99_coupon(self):
+
+        self.driver.find_element(By.XPATH,"//a[text()='Available Coupons']").click()
+        self.driver.find_element(By.XPATH,"//button[@data-coupon_code='save99']").click()
+        time.sleep(10)
+
         logger = self.test_logger()
-
-        # Enter the coupon code into the input field
-        self.driver.find_element(By.XPATH, "//input[@id='coupon_code']").send_keys("save99")
-        logger.info("Entered coupon code: save99")
-
-        # Click the 'Apply Coupon' button
-        self.driver.find_element(By.XPATH, "//button[@id='order_review_apply_coupon']").click()
-        logger.info("Clicked on 'Apply Coupon' button")
-
+        #
+        # # Enter the coupon code into the input field
+        # self.driver.find_element(By.XPATH, "//input[@id='coupon_code']").send_keys("save99")
+        # logger.info("Entered coupon code: save99")
+        #
+        # # Click the 'Apply Coupon' button
+        # self.driver.find_element(By.XPATH, "//button[@id='order_review_apply_coupon']").click()
+        # logger.info("Clicked on 'Apply Coupon' button")
+        #
         # Handle the alert
         time.sleep(3)
         try:
@@ -296,6 +303,8 @@ class Checkout(BaseClass):
         # actual_message = self.driver.find_element(*Checkout.coupon_message).text
         # assert expected_message == actual_message, f"Expected: {expected_message}, Actual: {actual_message}"
         logger.info("Coupon applied successfully")
+
+        self.driver.switch_to.default_content()
 
         return
 

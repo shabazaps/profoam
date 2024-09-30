@@ -11,9 +11,12 @@ class Member_details(BaseClass):
     # Profile details form
     salutation = (By.XPATH, "//input[@id='salutation_prof']")
     fname = (By.XPATH, "//input[@id='first_name']")
+    e_fname = (By.XPATH, "//label[@id='first_name-error']")
     lname = (By.XPATH, "//input[@id='last_name']")
     email = (By.XPATH, "//input[@id='email']")
+    e_email = (By.XPATH, "//label[@id='email-error']")
     mobile = (By.XPATH, "//input[@id='mobile_number']")
+    e_mobile = (By.XPATH,"//label[@id='mobile_number-error']")
     business = (By.XPATH, "//input[@id='business_name']")
     del_business = (By.XPATH, "//a[@class='close remove-member-business']")
     add1 = (By.XPATH, "//input[@id='address1']")
@@ -38,8 +41,13 @@ class Member_details(BaseClass):
         element = self.driver.find_element(*Member_details.fname)
         element.clear()
         # element.send_keys("Shabaz")
+        # expected = "This field is required."
+        # actual = self.driver.find_element(By.XPATH,"//label[@id='first_name-error']").text()
+        # assert expected == actual, f"Expected: {expected}, but got: {actual}"
+        return
+    def checkFname(self):
         expected = "This field is required."
-        actual = self.driver.find_element(By.XPATH,"//label[@id='first_name-error']").text()
+        actual = self.driver.find_element(By.XPATH, "//label[@id='first_name-error']").text
         assert expected == actual, f"Expected: {expected}, but got: {actual}"
         return
 
@@ -52,13 +60,24 @@ class Member_details(BaseClass):
     def email_address(self):
         element = self.driver.find_element(*Member_details.email)
         element.clear()
-        element.send_keys("testsa@yopmail.com")
+        element.send_keys("shabaz.com")
+        return
+    def check_email_address(self):
+        expected = "Please enter a valid email address."
+        actual = self.driver.find_element(*Member_details.e_email).text
+        assert expected == actual, f"Expected: {expected}, but got: {actual}"
         return
 
     def mobile_number(self):
         element = self.driver.find_element(*Member_details.mobile)
         element.clear()
-        element.send_keys("7567567566")
+        element.send_keys("7567567")
+        return
+
+    def check_mobile_number(self):
+        expected = "Please enter a valid phone number in the format 123-123-1234"
+        actual = self.driver.find_element(*Member_details.e_mobile).text
+        assert expected == actual, f"Expected: {expected}, but got: {actual}"
         return
 
     def business_name(self):

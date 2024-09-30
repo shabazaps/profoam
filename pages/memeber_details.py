@@ -1,6 +1,9 @@
 import time
 
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 from utilities.logger import BaseClass
 
@@ -21,6 +24,12 @@ class Member_details(BaseClass):
     city = (By.XPATH, "//input[@id='city']")
     postal = (By.XPATH, "//input[@id='postal_code']")
     update = (By.XPATH, "//input[@class='btn btn-primary profile-btn']")
+
+    recentpurchase = (By.XPATH, "//a[@href='/recent-purchased-items']")
+    # Hard coded value
+    recentItems = (By.XPATH,"//a[text()='Carlisle ST1 Air Purge D-02 Spray Gun']")
+    #Not working list of items
+    recentItems_Not_working = (By.XPATH, "//td[contains(@style, 'white-space: pre')]")
 
     def __init__(self, driver):
         self.driver = driver
@@ -118,3 +127,14 @@ class Member_details(BaseClass):
     def update_button(self):
         self.driver.execute_script("window.scrollBy(0, 350);")
         return self.driver.find_element(*Member_details.update).click()
+
+    def recent_purchase(self):
+        return self.driver.find_element(*Member_details.recentpurchase).click()
+
+    def recent_purchased_items(self):
+        return self.driver.find_element(*Member_details.recentItems).click()
+        # time.sleep()
+
+
+
+
