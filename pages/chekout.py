@@ -69,6 +69,31 @@ class Checkout(BaseClass):
     save99 = (By.XPATH, "//button[@data-coupon_code='save99']")
     coupon_message = (By.XPATH, "//td[.='Coupon code is applied successfully']")
 
+    #/////////////////////////
+    #Document test case variables
+    doc = (By.XPATH, "//a[@href='/documents']")
+    graco_fusion = (By.XPATH, "//a[text()='Graco Fusion ProConnect Gun Exploded Parts Diagram']")
+    input_search = (By.XPATH, "//input[@name='keyword']")
+    search_button = (By.XPATH, "//button[text()='Search']")
+    download = (By.XPATH,"//a[text()='Download']")
+    send_doc = (By.XPATH,"//a[text()='Send Document']")
+
+    #////////////////////////////////////////////////////////////////
+    #Tag DropDown
+    tag = (By.XPATH,"//select[@id='sel_tag']")
+    docaccufoam = (By.XPATH,"//a[text()='Accufoam Closed Cell High Yield Foam Product Sheet']")
+
+    #////////////////////////
+    #Send Document opens a popup
+
+    docname = (By.XPATH,"//input[@name='name']")
+    docemail = (By.XPATH,"//input[@name='email']")
+    docmobile  = (By.XPATH,"//input[@name='mobile_number']")
+    docSendMail= (By.XPATH,"//label[@for='to_email']")
+    docSendbutton= (By.XPATH,"//button[@id='document_send']")
+
+
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -303,8 +328,55 @@ class Checkout(BaseClass):
         # actual_message = self.driver.find_element(*Checkout.coupon_message).text
         # assert expected_message == actual_message, f"Expected: {expected_message}, Actual: {actual_message}"
         logger.info("Coupon applied successfully")
-
         self.driver.switch_to.default_content()
-
         return
 
+    def document_link(self):
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        return self.driver.find_element(*Checkout.doc).click()
+
+    def gracoFusion(self):
+        self.driver.execute_script("window.scrollTo(0,350);")
+        return self.driver.find_element(*Checkout.graco_fusion).click()
+
+    def searchInput(self):
+        self.driver.execute_script("window.scrollTo(0,300);")
+        return self.driver.find_element(*Checkout.input_search).send_keys("Graco Fusion")
+
+    def SearchButton(self):
+        searches = self.driver.find_elements(*Checkout.search_button)
+        for search in searches:
+            search.click()
+            break
+
+    def downloadButton(self):
+        return self.driver.find_element(*Checkout.download).click()
+
+    def sendDocButton(self):
+        return self.driver.find_element(*Checkout.send_doc).click()
+
+    def sendName(self):
+        return self.driver.find_element(*Checkout.docname).send_keys("John Doe")
+
+    def sendEmail(self):
+        return self.driver.find_element(*Checkout.docemail).send_keys("john.doe@example.com")
+
+    def sendMobile(self):
+        return self.driver.find_element(*Checkout.docmobile).send_keys("5615557689")
+
+    def DocSendEmail(self):
+        return self.driver.find_element(*Checkout.docSendMail).click()
+
+    def SendButton(self):
+        return self.driver.find_element(*Checkout.docSendbutton).click()
+
+    def Tag(self):
+        tages = self.driver.find_elements(*Checkout.tag).click()
+        for tag in tages:
+            if tag.text == "Accufoam":
+                tag.click()
+            break
+
+    def Document_Accufoam(self):
+        self.driver.execute_script("window.scrollTo(0,300);")
+        return self.driver.find_element(*Checkout.docaccufoam).click()
