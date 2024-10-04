@@ -54,15 +54,18 @@ class Test_Document(BaseClass):
         doc = Checkout(self.driver)
 
 
-        self.driver.get("https://staging.profoam.com/document/")
+        self.driver.get("https://staging.profoam.com/documents/")
         # Click on the Document link
         doc.document_link()
 
         #Select Accufoam from tag dropdown
         doc.Tag()
+        time.sleep(20)
 
         #Click on Search Button
         doc.SearchButton()
+
+        time.sleep(20)
 
         #Click on 1st Accufoam document
         doc.Document_Accufoam()
@@ -81,6 +84,9 @@ class Test_Document(BaseClass):
         #Click on Send Button
         doc.SendButton()
         time.sleep(4)
+
+
+
 
 
 

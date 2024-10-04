@@ -50,7 +50,7 @@ class Checkout(BaseClass):
     accufoam_residential = (By.XPATH, "//input[@value='residential']")
     accufoam_lift = (By.XPATH, "//input[@id='lgd_yes']")
     accufoam_shipcharge = (
-    By.XPATH, "//input[@value='SOUTHEASTERN FREIGHT LINES, INC. (Logistics Fox, Inc (TSM)) - 338.38']")
+        By.XPATH, "//input[@value='SOUTHEASTERN FREIGHT LINES, INC. (Logistics Fox, Inc (TSM)) - 338.38']")
 
     ship_daddress = (By.XPATH, "//label[@class='form-check-label label_info']")
     ship_fname = (By.XPATH, "//input[@name='different_shipping_fname']")
@@ -75,24 +75,22 @@ class Checkout(BaseClass):
     graco_fusion = (By.XPATH, "//a[text()='Graco Fusion ProConnect Gun Exploded Parts Diagram']")
     input_search = (By.XPATH, "//input[@name='keyword']")
     search_button = (By.XPATH, "//button[text()='Search']")
-    download = (By.XPATH,"//a[text()='Download']")
-    send_doc = (By.XPATH,"//a[text()='Send Document']")
+    download = (By.XPATH, "//a[text()='Download']")
+    send_doc = (By.XPATH, "//a[text()='Send Document']")
 
     #////////////////////////////////////////////////////////////////
     #Tag DropDown
-    tag = (By.XPATH,"//select[@id='sel_tag']")
-    docaccufoam = (By.XPATH,"//a[text()='Accufoam Closed Cell High Yield Foam Product Sheet']")
+    tag = (By.XPATH, "//select[@id='sel_tag']")
+    docaccufoam = (By.XPATH, "//a[text()='Accufoam Closed Cell High Yield Foam Product Sheet']")
 
     #////////////////////////
     #Send Document opens a popup
 
-    docname = (By.XPATH,"//input[@name='name']")
-    docemail = (By.XPATH,"//input[@name='email']")
-    docmobile  = (By.XPATH,"//input[@name='mobile_number']")
-    docSendMail= (By.XPATH,"//label[@for='to_email']")
-    docSendbutton= (By.XPATH,"//button[@id='document_send']")
-
-
+    docname = (By.XPATH, "//input[@name='name']")
+    docemail = (By.XPATH, "//input[@name='email']")
+    docmobile = (By.XPATH, "//input[@name='mobile_number']")
+    docSendMail = (By.XPATH, "//label[@for='to_email']")
+    docSendbutton = (By.XPATH, "//button[@id='document_send']")
 
     def __init__(self, driver):
         self.driver = driver
@@ -152,7 +150,12 @@ class Checkout(BaseClass):
         return self.driver.find_element(*Checkout.billing_address).click()
 
     def pickup_address_select(self):
-        return self.driver.find_element(*Checkout.pickup_address).click()
+        self.driver.execute_script("window.scroll(0,600);")
+        # return self.driver.find_element(*Checkout.pickup_address).click()
+        WebDriverWait(self.driver, 30).until(
+            EC.presence_of_element_located((By.XPATH, "//input[@name='shipping_method_sp']"))
+        ).click()
+        return
 
     # Business method for SI and Liquid
     def business(self):
@@ -297,8 +300,8 @@ class Checkout(BaseClass):
 
     def save99_coupon(self):
 
-        self.driver.find_element(By.XPATH,"//a[text()='Available Coupons']").click()
-        self.driver.find_element(By.XPATH,"//button[@data-coupon_code='save99']").click()
+        self.driver.find_element(By.XPATH, "//a[text()='Available Coupons']").click()
+        self.driver.find_element(By.XPATH, "//button[@data-coupon_code='save99']").click()
         time.sleep(10)
 
         logger = self.test_logger()
@@ -371,11 +374,14 @@ class Checkout(BaseClass):
         return self.driver.find_element(*Checkout.docSendbutton).click()
 
     def Tag(self):
-        tages = self.driver.find_elements(*Checkout.tag).click()
-        for tag in tages:
-            if tag.text == "Accufoam":
-                tag.click()
-            break
+        self.driver.execute_script("window.scrollTo(0,300);")
+        dropdown_options = self.driver.find_elements(By.TAG_NAME, value="Option")
+        for option in dropdown_options:
+            if option.text == 'Accufoam':
+                print(option.text)
+                option.click()
+                break
+        time.sleep(2)
 
     def Document_Accufoam(self):
         self.driver.execute_script("window.scrollTo(0,300);")
