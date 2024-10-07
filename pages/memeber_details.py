@@ -96,7 +96,6 @@ class Member_details(BaseClass):
         dropdown_options = self.driver.find_elements(By.TAG_NAME, value="Option")
         for option in dropdown_options:
             if option.text == 'United States':
-                print(option.text)
                 option.click()
                 break
         time.sleep(2)
@@ -106,7 +105,6 @@ class Member_details(BaseClass):
         dropdown_options = self.driver.find_elements(By.TAG_NAME, value="Option")
         for option in dropdown_options:
             if option.text == 'Maryland':
-                print(option.text)
                 option.click()
                 break
         time.sleep(2)
@@ -134,6 +132,8 @@ class Member_details(BaseClass):
     def recent_purchased_items(self):
         return self.driver.find_element(*Member_details.recentItems).click()
         # time.sleep()
+
+
 
 
 

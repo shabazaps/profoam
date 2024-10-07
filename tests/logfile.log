@@ -584,3 +584,51 @@ Do you want to continue?
 2024-10-04 18:25:22,414 :INFO : test_checkout :Pickup address selected successfully
 2024-10-04 18:25:26,413 :INFO : test_checkout :Credit card payment method selected successfully
 2024-10-04 18:25:29,657 :INFO : test_checkout :Credit card number entered successfully
+2024-10-07 12:33:21,112 :INFO : test_editprofile :Profile icon clicked successfully
+2024-10-07 12:33:26,177 :INFO : test_editprofile :Edit profile clicked successfully
+2024-10-07 12:33:27,174 :INFO : test_editprofile :Salutation selected as Professor
+2024-10-07 12:33:30,284 :INFO : test_editprofile :First Name entered successfully
+2024-10-07 12:33:35,369 :INFO : test_editprofile :Last Name entered successfully
+2024-10-07 12:33:35,468 :INFO : test_editprofile :Email entered successfully
+2024-10-07 12:33:35,565 :INFO : test_editprofile :Mobile Number entered successfully
+2024-10-07 12:33:35,690 :INFO : test_editprofile :Business Name entered successfully
+2024-10-07 12:33:35,820 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-10-07 12:33:35,916 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-10-07 12:33:38,025 :INFO : test_editprofile :Country selected successfully
+2024-10-07 12:33:40,216 :INFO : test_editprofile :Province selected successfully
+2024-10-07 12:33:40,348 :INFO : test_editprofile :City entered successfully
+2024-10-07 12:33:40,432 :INFO : test_editprofile :Postal Code entered successfully
+2024-10-07 12:33:40,565 :INFO : test_editprofile :Update button clicked successfully
+2024-10-07 12:33:40,610 :INFO : test_editprofile :First Name  assert successful
+2024-10-07 12:33:40,638 :INFO : test_editprofile :Email Address  assert successful
+2024-10-07 12:33:40,656 :INFO : test_editprofile :Mobile Number  assert successful
+2024-10-07 12:44:58,324 :INFO : test_edit_profile_with_invalid_data :Profile icon clicked successfully
+2024-10-07 12:45:52,236 :INFO : test_editprofile :Profile icon clicked successfully
+2024-10-07 12:47:05,906 :INFO : test_editprofile :Profile icon clicked successfully
+2024-10-07 12:47:10,930 :INFO : test_editprofile :Edit profile clicked successfully
+2024-10-07 12:47:11,276 :INFO : test_editprofile :Salutation selected as Professor
+2024-10-07 12:47:13,114 :INFO : test_editprofile :First Name entered successfully
+2024-10-07 12:47:18,235 :INFO : test_editprofile :Last Name entered successfully
+2024-10-07 12:47:18,351 :INFO : test_editprofile :Email entered successfully
+2024-10-07 12:47:18,432 :INFO : test_editprofile :Mobile Number entered successfully
+2024-10-07 12:47:18,521 :INFO : test_editprofile :Business Name entered successfully
+2024-10-07 12:47:18,661 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-10-07 12:47:18,745 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-10-07 12:47:20,832 :INFO : test_editprofile :Country selected successfully
+2024-10-07 12:47:23,027 :INFO : test_editprofile :Province selected successfully
+2024-10-07 12:47:23,122 :INFO : test_editprofile :City entered successfully
+2024-10-07 12:47:23,193 :INFO : test_editprofile :Postal Code entered successfully
+2024-10-07 12:47:23,330 :INFO : test_editprofile :Update button clicked successfully
+2024-10-07 12:47:23,383 :INFO : test_editprofile :First Name  assert successful
+2024-10-07 12:47:23,407 :INFO : test_editprofile :Email Address  assert successful
+2024-10-07 12:47:23,441 :INFO : test_editprofile :Mobile Number  assert successful
+2024-10-07 13:34:52,395 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 17:10:12,213 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 17:20:03,915 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 17:24:31,805 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 18:01:12,485 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 18:03:20,432 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 18:07:43,939 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 18:12:44,580 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 18:14:10,429 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-07 18:19:08,093 :INFO : test_Wishlist_negative :WishList products were added to cart
