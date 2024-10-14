@@ -14,6 +14,18 @@ class Test_Wishlist(BaseClass):
         # Create object for checkout page
         checkout = Checkout(self.driver)
 
+        #To add acuufoam to wishlist
+        checkout.shop_icon()
+        checkout.php()
+        checkout.shop_all_link()
+        checkout.new_window()
+        checkout.accufoam_select()
+        checkout.shadow_close()
+        # self.driver.execute_script("window.scroll(0,200);")
+        checkout.accufoamSVG()
+        print("Completed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+
+
         #Click on the profile icon
         wish.profile_icon()
 

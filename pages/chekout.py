@@ -1,6 +1,7 @@
 import time
 
-from selenium.common import TimeoutException
+from selenium.common import TimeoutException, ElementNotInteractableException, NoSuchElementException, \
+    ElementClickInterceptedException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,6 +11,11 @@ from utilities.logger import BaseClass
 
 
 class Checkout(BaseClass):
+    #/////////////////////
+    #Global Variables
+    pages_title = ""
+    title_product = ""
+
     login_button = (By.XPATH, "//span[normalize-space()='Login']")
     username = (By.XPATH, "//input[@id='email']")
     pas = (By.XPATH, "//input[@id='password']")
@@ -27,12 +33,13 @@ class Checkout(BaseClass):
     cleaning_solvent = (By.XPATH, "//a[.='Cleaning Solvents']")
     cleaning_product = (By.XPATH, "//a[normalize-space()='Dynasolve CU-6 1g']")
     proceed_checkout = (By.XPATH, "//a[@class='btn btn-fill-out btn-proceed']")
-    billing_address = (By.XPATH, "//label[@for='1228']")
+    billing_address = (By.XPATH, "//input[@class='regular-radio']/following-sibling::label")
     pickup_address = (By.XPATH, "//input[@name='shipping_method_sp']")
     business_name_close = (By.XPATH, "//input[@type='search']")
     business_name = (By.XPATH, "//input[@id='business_name']")
     shipping_method = (By.XPATH, "//input[@name='shipping_method_ups'][1]")
     pay_cc = (By.XPATH, "//span[@id='pnc']")
+    pay_existing = (By.XPATH, "//span[text()='Pay using credit card']")
     num_frame = (By.XPATH, "//iframe[@title='Secure card number input frame']")
     cc_number = (By.XPATH, "//input[@data-elements-stable-field-name='cardNumber']")
     exp_frame = (By.XPATH, "//iframe[@title='Secure expiration date input frame']")
@@ -92,6 +99,16 @@ class Checkout(BaseClass):
     docSendMail = (By.XPATH, "//label[@for='to_email']")
     docSendbutton = (By.XPATH, "//button[@id='document_send']")
 
+    # Category DropDown
+    ebookitems = (By.XPATH, "//h6[@class='ann_title']/a")
+    ebookTitle = (By.XPATH, "//h1[@class='title document_title_h1']")
+
+    #Wrong searchInput
+    wrongDoc = (By.XPATH, "//div[@class='alert alert-danger']/p")
+
+    #Total calculation
+    money = (By.XPATH, "(//tfoot/tr/th)/following-sibling::td")
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -150,7 +167,7 @@ class Checkout(BaseClass):
         return self.driver.find_element(*Checkout.billing_address).click()
 
     def pickup_address_select(self):
-        self.driver.execute_script("window.scroll(0,600);")
+        self.driver.execute_script("window.scroll(0,300);")
         # return self.driver.find_element(*Checkout.pickup_address).click()
         WebDriverWait(self.driver, 30).until(
             EC.presence_of_element_located((By.XPATH, "//input[@name='shipping_method_sp']"))
@@ -159,7 +176,7 @@ class Checkout(BaseClass):
 
     # Business method for SI and Liquid
     def business(self):
-        self.driver.find_element(*Checkout.business_name_close).click()
+        self.driver.find_element(*Checkout.business_name).clear()
         return self.driver.find_element(*Checkout.business_name).send_keys("SILIQUID")
 
     def shipping_method_select(self):
@@ -170,6 +187,46 @@ class Checkout(BaseClass):
         pay_button = wait.until(EC.element_to_be_clickable(Checkout.pay_cc))  # Corrected line
         pay_button.click()
         # return self.driver.find_element(*Checkout.pay_cc).click()
+
+    # def pay_creditcardEvents(self):
+    #     # wait = WebDriverWait(self.driver, 10)  # Adjust timeout as necessary
+    #     # pay_button = wait.until(EC.element_to_be_clickable(Checkout.pay_cc))  # Corrected line
+    #     # pay_button.click()
+    #     self.driver.execute_script("window.scroll(0,800);")
+    #     wait = WebDriverWait(self.driver, 10)
+    #     wait.until(EC.element_to_be_clickable(Checkout.pay_existing))
+    #
+    #     self.driver.find_element(By.XPATH,"//span[@id='pnc']").click()
+    #     return
+    def wait_for_element(self, driver, locator, timeout=20):
+        wait = WebDriverWait(driver, timeout)
+        element = None
+
+        try:
+            # Wait for the presence of the element
+            element = wait.until(EC.presence_of_element_located(locator))
+            # Wait for the visibility of the element
+            element = wait.until(EC.visibility_of(element))
+            # Wait for the element to be clickable
+            element = wait.until(EC.element_to_be_clickable(element))
+        except (TimeoutException, ElementNotInteractableException, NoSuchElementException) as e:
+            print(f"Waiting for element {locator} failed with error: {str(e)}")
+        return element
+
+    def pay_creditcardEvents(self):
+        # self.driver.execute_script("window.scroll(0,200);")
+
+        # Define your locator
+        locator = (By.XPATH, "//span[text()='Pay using credit card']")
+        element = self.wait_for_element(self.driver, locator)  # Ensure all required arguments are passed
+
+        if element:
+            # Scroll to the element if necessary
+            self.driver.execute_script("arguments[0].scrollIntoView();", element)
+            self.driver.execute_script("window.scroll(0,-180);")
+            element.click()  # Click the element
+        else:
+            print("Element was not found or not interactable.")
 
     def cc_number_input(self):
         cc_iframe = self.driver.find_element(*Checkout.num_frame)
@@ -344,7 +401,7 @@ class Checkout(BaseClass):
 
     def searchInput(self):
         self.driver.execute_script("window.scrollTo(0,300);")
-        return self.driver.find_element(*Checkout.input_search).send_keys("Graco Fusion")
+        return self.driver.find_element(*Checkout.input_search)
 
     def SearchButton(self):
         searches = self.driver.find_elements(*Checkout.search_button)
@@ -386,3 +443,93 @@ class Checkout(BaseClass):
     def Document_Accufoam(self):
         self.driver.execute_script("window.scrollTo(0,300);")
         return self.driver.find_element(*Checkout.docaccufoam).click()
+
+    def categoryDropDown(self):
+        dropdown_options = self.driver.find_elements(By.TAG_NAME, value="Option")
+        for option in dropdown_options:
+            if option.text == 'Ebooks':
+                print(option.text)
+                option.click()
+                break
+        time.sleep(4)
+        return
+
+    def Ebooks_Items(self):
+        self.driver.execute_script("window.scroll(0,100);")
+        ebooks = self.driver.find_elements(*Checkout.ebookitems)
+        pages_title = ""
+        for ebook in ebooks:
+            self.driver.execute_script("window.scroll(0,100);")
+            pages_title = ebook.text
+            print(f"pages_title:: {pages_title}")
+            ebook.click()
+            break
+        return pages_title
+
+    def ebookPageTitle(self):
+        title_product = self.driver.find_element(*Checkout.ebookTitle).text
+        # print(title_product)
+        return title_product
+
+    def asserting(self, pages_title, title_product):
+        assert pages_title == title_product, f"Expected '{pages_title}', but got '{title_product}'"
+
+    def InvalidDoc(self):
+        self.driver.execute_script("window.scrollTo(0,300);")
+        actual = self.driver.find_element(*Checkout.wrongDoc).text
+        expected = "There are no documents available."
+        assert expected == actual, f"Expected: {expected}, Actual: {actual}"
+        return
+
+    #For Wishlist items
+
+    def accufoamSVG(self):
+        try:
+            # Find all SVG elements with the same ID
+            svg_elements = WebDriverWait(self.driver, 10).until(
+                EC.presence_of_all_elements_located((By.XPATH, "//svg[@id='Capa_1']"))
+            )
+
+            # Click on the first SVG element if it exists
+            if svg_elements:
+                try:
+                    svg_elements[0].click()
+                    print("First SVG element clicked successfully.")
+                except ElementClickInterceptedException:
+                    print("Element not clickable due to another element overlaying it.")
+                except Exception as click_exception:
+                    print(f"Error clicking the SVG element: {click_exception}")
+            else:
+                print("No SVG elements found.")
+
+        except TimeoutException:
+            print("Timed out waiting for SVG elements to be present.")
+        except NoSuchElementException:
+            print("SVG elements not found in the DOM.")
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+        return
+
+    def Total(self):
+        elements = self.driver.find_elements(*Checkout.money)
+        subTotal = elements[0].text
+        subTotal = float(subTotal.replace("$", "").replace(",", ""))
+        shipping = elements[1].text
+        shipping = float(shipping.replace("$", "").replace(",", ""))
+        discount = elements[2].text
+        discount = float(discount.replace("$", "").replace(",", ""))
+        tax = elements[3].text
+        tax = float(tax.replace("$", "").replace(",", ""))
+        totalPayable = elements[4].text
+        totalPayable = float(totalPayable.replace("$", "").replace(",", ""))
+        actualTotal = (subTotal+shipping+tax) - discount
+
+        assert totalPayable == actualTotal
+
+        print(f"SubTotal: {subTotal}")
+        print(f"Shipping: {shipping}")
+        print(f"discount: {discount}")
+        print(f"Tax: {tax}")
+        print(f"Total Payable: {totalPayable}")
+        print(f"Actual Total: {actualTotal}")
+        return

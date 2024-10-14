@@ -6,7 +6,7 @@ from utilities.logger import BaseClass
 
 class Test_Document(BaseClass):
 
-    def test_doc_search(self,setup):
+    def test_doc_search(self, setup):
         logger = self.test_logger()
 
         doc = Checkout(self.driver)
@@ -15,7 +15,7 @@ class Test_Document(BaseClass):
         doc.document_link()
 
         #Enter Graco Fusion in search input
-        doc.searchInput()
+        doc.searchInput().send_keys("Graco Fusion")
 
         #Click on search Button
         doc.SearchButton()
@@ -42,17 +42,15 @@ class Test_Document(BaseClass):
         #Click on send Email only
         doc.DocSendEmail()
 
-
         #click on the Send Button
 
         doc.SendButton()
         time.sleep(4)
 
-    def test_doc_tag(self,setup):
+    def test_doc_tag(self, setup):
         logger = self.test_logger()
 
         doc = Checkout(self.driver)
-
 
         self.driver.get("https://staging.profoam.com/documents/")
         # Click on the Document link
@@ -85,10 +83,43 @@ class Test_Document(BaseClass):
         doc.SendButton()
         time.sleep(4)
 
+    def test_Category_Pagination(self, setup):
+        logger = self.test_logger()
 
+        page = Checkout(self.driver)
 
+        self.driver.get("https://staging.profoam.com/documents/")
 
+        page.php()
 
+        page.categoryDropDown()
+
+        page.SearchButton()
+
+        page.Ebooks_Items()
+
+        page.ebookPageTitle()
+
+        pages_title = page.Ebooks_Items()  # Capture the pages_title returned
+        title_product = page.ebookPageTitle()
+        page.asserting(pages_title, title_product)
+        logger.info("Assertion successful for pagination")
+
+    def test_wrong_search(self):
+        logger = self.test_logger()
+
+        page = Checkout(self.driver)
+
+        self.driver.get("https://staging.profoam.com/documents/")
+
+        page.php()
+
+        page.searchInput().send_keys("Voltas")
+
+        page.SearchButton()
+
+        page.InvalidDoc()
+        print("Asertion successful for Wrong search")
 
 
 

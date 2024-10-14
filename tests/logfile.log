@@ -632,3 +632,450 @@ Do you want to continue?
 2024-10-07 18:12:44,580 :INFO : test_Wishlist_negative :WishList products were added to cart
 2024-10-07 18:14:10,429 :INFO : test_Wishlist_negative :WishList products were added to cart
 2024-10-07 18:19:08,093 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-08 16:28:43,247 :INFO : test_Wishlist_negative :WishList products were added to cart
+2024-10-08 16:31:23,842 :INFO : test_editprofile :Profile icon clicked successfully
+2024-10-08 16:31:27,291 :INFO : test_editprofile :Edit profile clicked successfully
+2024-10-08 16:31:28,882 :INFO : test_editprofile :Salutation selected as Professor
+2024-10-08 16:31:29,984 :INFO : test_editprofile :First Name entered successfully
+2024-10-08 16:31:35,212 :INFO : test_editprofile :Last Name entered successfully
+2024-10-08 16:31:35,430 :INFO : test_editprofile :Email entered successfully
+2024-10-08 16:31:35,678 :INFO : test_editprofile :Mobile Number entered successfully
+2024-10-08 16:31:35,901 :INFO : test_editprofile :Business Name entered successfully
+2024-10-08 16:31:36,245 :INFO : test_editprofile :Address Line 1 entered successfully
+2024-10-08 16:31:36,422 :INFO : test_editprofile :Address Line 2 entered successfully
+2024-10-08 16:31:38,622 :INFO : test_editprofile :Country selected successfully
+2024-10-08 16:31:41,076 :INFO : test_editprofile :Province selected successfully
+2024-10-08 16:31:41,293 :INFO : test_editprofile :City entered successfully
+2024-10-08 16:31:41,396 :INFO : test_editprofile :Postal Code entered successfully
+2024-10-08 16:31:41,606 :INFO : test_editprofile :Update button clicked successfully
+2024-10-08 16:31:41,655 :INFO : test_editprofile :First Name  assert successful
+2024-10-08 16:31:41,684 :INFO : test_editprofile :Email Address  assert successful
+2024-10-08 16:31:41,703 :INFO : test_editprofile :Mobile Number  assert successful
+2024-10-09 14:59:15,704 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-09 14:59:17,323 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-09 14:59:17,345 :INFO : test_checkout :Switched to Category all successfully
+2024-10-09 15:00:33,394 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-09 18:28:14,359 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-09 18:28:14,687 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-09 18:28:14,708 :INFO : test_checkout :Switched to Category all successfully
+2024-10-09 18:29:12,851 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-09 18:29:27,223 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-09 18:29:39,778 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-09 18:29:47,362 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-10-09 18:29:47,894 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-10-09 18:29:47,992 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-10-09 18:30:51,273 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-10-09 18:31:04,465 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-10-09 18:31:19,614 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-10-09 18:31:20,124 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-09 18:31:37,622 :INFO : test_checkout :Illinois Billing address selected successfully
+2024-10-09 18:31:38,057 :INFO : test_checkout :Business Name entered successfully
+2024-10-10 14:31:22,435 :INFO : test_events :pagination assertion successful
+2024-10-10 14:32:39,204 :INFO : test_events :pagination assertion successful
+2024-10-10 14:34:11,090 :INFO : test_events :pagination assertion successful
+2024-10-10 14:35:21,897 :INFO : test_events :pagination assertion successful
+2024-10-10 14:36:46,680 :INFO : test_events :pagination assertion successful
+2024-10-10 15:19:17,565 :INFO : test_events :pagination assertion successful
+2024-10-10 16:20:15,267 :INFO : test_events :pagination assertion successful
+2024-10-10 16:20:38,509 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:25:02,447 :INFO : test_events :pagination assertion successful
+2024-10-10 16:25:26,413 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:25:33,715 :INFO : test_events :Illinois Billing address selected successfully
+2024-10-10 16:25:34,445 :INFO : test_events :Business Name entered successfully
+2024-10-10 16:27:12,537 :INFO : test_events :pagination assertion successful
+2024-10-10 16:27:36,578 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:27:44,879 :INFO : test_events :Business Name entered successfully
+2024-10-10 16:31:02,943 :INFO : test_events :pagination assertion successful
+2024-10-10 16:31:27,592 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:31:35,572 :INFO : test_events :Business Name entered successfully
+2024-10-10 16:34:17,685 :INFO : test_events :pagination assertion successful
+2024-10-10 16:34:41,320 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:34:50,376 :INFO : test_events :Business Name entered successfully
+2024-10-10 16:37:29,213 :INFO : test_events :pagination assertion successful
+2024-10-10 16:37:58,025 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:38:06,063 :INFO : test_events :Business Name entered successfully
+2024-10-10 16:42:22,373 :INFO : test_events :pagination assertion successful
+2024-10-10 16:42:46,579 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:42:54,869 :INFO : test_events :Business Name entered successfully
+2024-10-10 16:44:11,067 :INFO : test_events :pagination assertion successful
+2024-10-10 16:44:35,544 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:44:43,471 :INFO : test_events :Business Name entered successfully
+2024-10-10 16:46:48,992 :INFO : test_events :pagination assertion successful
+2024-10-10 16:47:14,201 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 16:47:22,206 :INFO : test_events :Business Name entered successfully
+2024-10-10 17:10:43,490 :INFO : test_events :pagination assertion successful
+2024-10-10 17:11:06,998 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 17:11:14,956 :INFO : test_events :Business Name entered successfully
+2024-10-10 17:13:41,845 :INFO : test_events :pagination assertion successful
+2024-10-10 17:14:05,331 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 17:14:13,073 :INFO : test_events :Business Name entered successfully
+2024-10-10 17:16:32,132 :INFO : test_events :pagination assertion successful
+2024-10-10 17:16:56,934 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 17:17:05,138 :INFO : test_events :Business Name entered successfully
+2024-10-10 17:18:43,106 :INFO : test_events :pagination assertion successful
+2024-10-10 17:19:06,822 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 17:19:14,439 :INFO : test_events :Business Name entered successfully
+2024-10-10 17:22:15,474 :INFO : test_events :pagination assertion successful
+2024-10-10 17:22:41,776 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 17:22:50,273 :INFO : test_events :Business Name entered successfully
+2024-10-10 17:25:18,783 :INFO : test_events :pagination assertion successful
+2024-10-10 17:25:42,784 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 17:25:50,343 :INFO : test_events :Business Name entered successfully
+2024-10-10 17:28:57,719 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-10 17:28:59,312 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-10 17:28:59,329 :INFO : test_checkout :Switched to Category all successfully
+2024-10-10 17:30:16,328 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-10 17:30:35,540 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-10 17:30:44,475 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-10 17:30:50,913 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-10-10 17:30:52,688 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-10-10 17:30:52,705 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-10-10 17:32:14,333 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-10-10 17:32:40,681 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-10-10 17:32:51,009 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-10-10 17:32:53,294 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-10 17:33:04,600 :INFO : test_checkout :Illinois Billing address selected successfully
+2024-10-10 17:33:06,083 :INFO : test_checkout :Business Name entered successfully
+2024-10-10 17:37:17,148 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-10 17:37:18,981 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-10 17:37:19,000 :INFO : test_checkout :Switched to Category all successfully
+2024-10-10 17:38:46,430 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-10 17:39:03,347 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-10 17:39:16,040 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-10 17:39:21,915 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-10-10 17:39:23,641 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-10-10 17:39:23,658 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-10-10 17:40:37,629 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-10-10 17:40:59,990 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-10-10 17:41:09,372 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-10-10 17:45:22,809 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-10 17:45:23,175 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-10 17:45:23,190 :INFO : test_checkout :Switched to Category all successfully
+2024-10-10 17:46:44,037 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-10 17:47:02,301 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-10 17:47:20,680 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-10 17:47:30,390 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-10-10 17:47:32,212 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-10-10 17:47:32,238 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-10-10 17:49:48,865 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-10-10 17:50:34,237 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-10-10 17:50:47,075 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-10-10 17:50:49,458 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-10 17:51:00,285 :INFO : test_checkout :Illinois Billing address selected successfully
+2024-10-10 17:51:02,912 :INFO : test_checkout :Business Name entered successfully
+2024-10-10 17:55:19,317 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-10 17:55:20,898 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-10 17:55:20,927 :INFO : test_checkout :Switched to Category all successfully
+2024-10-10 17:56:37,466 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-10 17:56:58,682 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-10 17:57:11,757 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-10 17:57:14,189 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-10 17:57:24,592 :INFO : test_checkout :Illinois Billing address selected successfully
+2024-10-10 17:57:26,913 :INFO : test_checkout :Business Name entered successfully
+2024-10-10 19:12:31,692 :INFO : test_events :pagination assertion successful
+2024-10-10 19:13:17,948 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-10 19:13:31,197 :INFO : test_events :Business Name entered successfully
+2024-10-11 11:18:09,334 :INFO : test_events :pagination assertion successful
+2024-10-11 11:18:31,266 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 11:18:38,777 :INFO : test_events :Business Name entered successfully
+2024-10-11 11:21:50,794 :INFO : test_events :pagination assertion successful
+2024-10-11 11:22:13,533 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 11:22:21,160 :INFO : test_events :Business Name entered successfully
+2024-10-11 11:27:25,856 :INFO : test_events :pagination assertion successful
+2024-10-11 11:27:48,275 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 11:27:56,314 :INFO : test_events :Business Name entered successfully
+2024-10-11 11:44:05,727 :INFO : test_events :pagination assertion successful
+2024-10-11 11:44:24,836 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 11:44:32,311 :INFO : test_events :Business Name entered successfully
+2024-10-11 11:48:09,065 :INFO : test_events :pagination assertion successful
+2024-10-11 11:48:31,041 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 11:48:39,068 :INFO : test_events :Business Name entered successfully
+2024-10-11 11:53:44,849 :INFO : test_events :pagination assertion successful
+2024-10-11 11:54:05,429 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 11:54:12,341 :INFO : test_events :Business Name entered successfully
+2024-10-11 11:58:03,227 :INFO : test_events :pagination assertion successful
+2024-10-11 11:58:23,027 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 11:58:30,475 :INFO : test_events :Business Name entered successfully
+2024-10-11 12:02:55,259 :INFO : test_events :pagination assertion successful
+2024-10-11 12:03:14,677 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 12:03:21,437 :INFO : test_events :Business Name entered successfully
+2024-10-11 12:03:22,441 :INFO : test_events :Credit card payment method selected successfully
+2024-10-11 12:09:03,549 :INFO : test_events :pagination assertion successful
+2024-10-11 12:09:23,537 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 12:09:30,835 :INFO : test_events :Business Name entered successfully
+2024-10-11 12:10:58,486 :INFO : test_events :pagination assertion successful
+2024-10-11 12:11:17,816 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 12:11:25,062 :INFO : test_events :Business Name entered successfully
+2024-10-11 12:11:26,126 :INFO : test_events :Credit card payment method selected successfully
+2024-10-11 12:11:30,027 :INFO : test_events :Credit card number entered successfully
+2024-10-11 12:11:30,211 :INFO : test_events :Credit card expiry date entered successfully
+2024-10-11 12:11:30,284 :INFO : test_events :Credit card cvc entered successfully
+2024-10-11 12:11:50,402 :INFO : test_events :Future payment saved successfully
+2024-10-11 12:11:50,541 :INFO : test_events :Pay now button clicked successfully
+2024-10-11 12:11:50,541 :INFO : test_events :Order placed successfully
+2024-10-11 14:01:14,158 :INFO : test_events :pagination assertion successful
+2024-10-11 14:01:36,899 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 14:01:45,077 :INFO : test_events :Business Name entered successfully
+2024-10-11 14:01:46,368 :INFO : test_events :Credit card payment method selected successfully
+2024-10-11 14:03:16,058 :INFO : test_events :pagination assertion successful
+2024-10-11 14:03:38,478 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 14:03:46,610 :INFO : test_events :Business Name entered successfully
+2024-10-11 14:03:47,733 :INFO : test_events :Credit card payment method selected successfully
+2024-10-11 14:03:52,075 :INFO : test_events :Credit card number entered successfully
+2024-10-11 14:03:52,613 :INFO : test_events :Credit card expiry date entered successfully
+2024-10-11 14:03:53,045 :INFO : test_events :Credit card cvc entered successfully
+2024-10-11 14:04:13,206 :INFO : test_events :Future payment saved successfully
+2024-10-11 14:04:13,418 :INFO : test_events :Pay now button clicked successfully
+2024-10-11 14:04:13,419 :INFO : test_events :Order placed successfully
+2024-10-11 15:14:48,989 :INFO : test_events :pagination assertion successful
+2024-10-11 15:15:11,406 :INFO : test_events :Proceed to checkout clicked successfully
+2024-10-11 15:15:19,502 :INFO : test_events :Business Name entered successfully
+2024-10-11 15:15:20,621 :INFO : test_events :Credit card payment method selected successfully
+2024-10-11 15:15:24,653 :INFO : test_events :Credit card number entered successfully
+2024-10-11 15:15:25,477 :INFO : test_events :Credit card expiry date entered successfully
+2024-10-11 15:15:26,212 :INFO : test_events :Credit card cvc entered successfully
+2024-10-11 15:15:46,382 :INFO : test_events :Future payment saved successfully
+2024-10-11 15:15:46,620 :INFO : test_events :Pay now button clicked successfully
+2024-10-11 15:15:46,620 :INFO : test_events :Order placed successfully
+2024-10-11 16:27:56,445 :INFO : test_event_unclick :pagination assertion successful
+2024-10-11 16:29:38,899 :INFO : test_event_unclick :pagination assertion successful
+2024-10-11 16:32:12,315 :INFO : test_event_unclick :pagination assertion successful
+2024-10-14 11:35:47,848 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 11:35:49,032 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 11:35:49,045 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 11:37:07,097 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 11:37:29,768 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 11:37:37,426 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 11:37:43,651 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-10-14 11:37:44,875 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-10-14 11:37:44,901 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-10-14 11:38:58,612 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-10-14 11:39:20,034 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-10-14 11:39:33,295 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-10-14 11:39:34,155 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 11:45:07,268 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 11:45:10,151 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 11:45:10,177 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 11:46:25,738 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 11:46:46,432 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 11:46:58,168 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 11:47:06,786 :INFO : test_checkout :Shop Icon clicked successfully for liquid items
+2024-10-14 11:47:09,240 :INFO : test_checkout :Shop All link clicked successfully for liquid items
+2024-10-14 11:47:09,255 :INFO : test_checkout :Switched to Category all for liquid items successfully
+2024-10-14 11:48:26,936 :INFO : test_checkout :Cleaning solvent option clicked successfully
+2024-10-14 11:48:47,091 :INFO : test_checkout :Cleaning solvent product selected successfully
+2024-10-14 11:48:56,448 :INFO : test_checkout :Cleaning solvent added to cart successfully
+2024-10-14 11:48:57,036 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 11:49:06,865 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 11:49:07,310 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 11:49:07,964 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 11:49:22,594 :INFO : test_checkout :Credit card payment method selected successfully
+2024-10-14 11:49:25,874 :INFO : test_checkout :Credit card number entered successfully
+2024-10-14 11:49:26,566 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-10-14 16:53:25,146 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 16:53:29,852 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 16:53:29,915 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 16:55:04,040 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 16:55:31,709 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 16:55:45,324 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 16:55:46,334 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 16:55:58,489 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 16:56:02,852 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 16:56:03,368 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 16:57:41,150 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 16:58:17,686 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 16:58:21,898 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 16:58:21,947 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 16:59:58,648 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 17:00:27,985 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 17:00:39,433 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 17:00:40,336 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 17:00:49,698 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 17:00:51,015 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 17:00:52,439 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 17:00:58,454 :INFO : test_checkout :Credit card payment method selected successfully
+2024-10-14 17:01:08,673 :INFO : test_checkout :Credit card number entered successfully
+2024-10-14 17:01:09,088 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-10-14 17:01:09,372 :INFO : test_checkout :Credit card cvc entered successfully
+2024-10-14 17:02:19,609 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 17:02:23,798 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 17:02:23,848 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 17:03:59,164 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 17:04:22,097 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 17:04:33,346 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 17:04:34,689 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 17:04:46,632 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 17:04:47,245 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 17:04:47,797 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 17:04:49,675 :INFO : test_checkout :Credit card payment method selected successfully
+2024-10-14 17:05:00,816 :INFO : test_checkout :Credit card number entered successfully
+2024-10-14 17:05:03,425 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-10-14 17:05:03,731 :INFO : test_checkout :Credit card cvc entered successfully
+2024-10-14 17:05:23,997 :INFO : test_checkout :Future payment saved successfully
+2024-10-14 17:06:20,615 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 17:06:24,834 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 17:06:24,885 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 17:08:03,101 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 17:08:34,513 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 17:08:47,494 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 17:08:58,360 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 17:09:03,730 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 17:09:04,315 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 17:09:06,752 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 17:09:08,413 :INFO : test_checkout :Credit card payment method selected successfully
+2024-10-14 17:09:16,915 :INFO : test_checkout :Credit card number entered successfully
+2024-10-14 17:09:18,826 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-10-14 17:09:19,142 :INFO : test_checkout :Credit card cvc entered successfully
+2024-10-14 17:09:39,405 :INFO : test_checkout :Future payment saved successfully
+2024-10-14 17:16:59,970 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 17:17:04,073 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 17:17:04,118 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 17:19:08,938 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 17:19:32,538 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 17:19:45,982 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 17:19:47,030 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 17:19:59,574 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 17:20:02,512 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 17:20:04,519 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 17:23:30,174 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 17:23:33,995 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 17:23:34,013 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 17:24:59,273 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 17:25:21,738 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 17:25:31,786 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 17:25:33,037 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 17:25:42,411 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 17:25:42,928 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 17:25:43,588 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 17:27:09,380 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 17:27:12,762 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 17:27:12,777 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 17:28:35,522 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 17:28:58,574 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 17:29:07,630 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 17:29:08,721 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 17:29:16,645 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 17:29:17,908 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 17:30:35,431 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 17:30:37,766 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 17:30:37,790 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 17:31:50,591 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 17:32:11,718 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 17:32:20,582 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 17:32:21,412 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 17:32:28,695 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 17:32:30,061 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 17:32:31,501 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 17:49:15,343 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 17:49:19,210 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 17:49:19,246 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 17:52:39,105 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 17:53:10,632 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 17:53:22,186 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 17:53:32,165 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 17:53:39,961 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 17:53:41,120 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 17:53:43,331 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 18:02:39,272 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 18:02:42,733 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 18:02:42,759 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 18:04:00,736 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 18:04:19,849 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 18:04:33,205 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 18:04:34,264 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 18:04:43,361 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 18:04:44,627 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 18:04:45,700 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 18:08:10,153 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 18:08:13,775 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 18:08:13,810 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 18:09:27,406 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 18:09:46,745 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 18:09:55,572 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 18:09:56,701 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 18:10:04,573 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 18:10:05,777 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 18:10:07,057 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 18:19:35,613 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 18:19:41,418 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 18:19:41,465 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 18:21:16,421 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 18:21:40,052 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 18:21:49,416 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 18:22:00,267 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 18:22:08,028 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 18:22:09,229 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 18:22:12,556 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 18:23:54,325 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 18:23:56,671 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 18:23:56,712 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 18:25:39,704 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 18:26:03,324 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 18:26:15,065 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 18:26:16,116 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 18:26:29,038 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 18:26:29,534 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 18:26:30,036 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 18:26:30,203 :INFO : test_checkout :Everything amount is displayed Correctly
+2024-10-14 18:26:37,536 :INFO : test_checkout :Credit card payment method selected successfully
+2024-10-14 18:26:49,800 :INFO : test_checkout :Credit card number entered successfully
+2024-10-14 18:26:50,174 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-10-14 18:26:50,439 :INFO : test_checkout :Credit card cvc entered successfully
+2024-10-14 18:27:10,657 :INFO : test_checkout :Future payment saved successfully
+2024-10-14 18:32:05,055 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 18:32:08,972 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 18:32:09,020 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 18:33:41,402 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 18:34:06,252 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 18:34:16,164 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 18:34:17,000 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 18:34:28,178 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 18:34:28,860 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 18:34:30,356 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 18:34:43,604 :INFO : test_checkout :Everything amount is displayed Correctly
+2024-10-14 18:34:44,006 :INFO : test_checkout :Credit card payment method selected successfully
+2024-10-14 18:34:47,390 :INFO : test_checkout :Credit card number entered successfully
+2024-10-14 18:34:47,631 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-10-14 18:34:47,957 :INFO : test_checkout :Credit card cvc entered successfully
+2024-10-14 18:35:08,198 :INFO : test_checkout :Future payment saved successfully
+2024-10-14 18:44:22,199 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 18:44:24,669 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 18:44:24,688 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 18:45:39,562 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 18:45:59,286 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 18:46:09,084 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 18:46:10,048 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 18:46:18,786 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 18:46:20,309 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 18:50:43,962 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 18:50:46,676 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 18:50:46,713 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 18:52:24,127 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 18:52:41,196 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 18:52:50,339 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 18:52:51,532 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 18:53:00,286 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 18:53:01,241 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 18:53:02,271 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 18:53:13,187 :INFO : test_checkout :Everything amount is displayed Correctly
+2024-10-14 18:53:14,797 :INFO : test_checkout :Credit card payment method selected successfully
+2024-10-14 18:53:18,425 :INFO : test_checkout :Credit card number entered successfully
+2024-10-14 18:53:19,556 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-10-14 18:53:20,059 :INFO : test_checkout :Credit card cvc entered successfully
+2024-10-14 18:53:41,338 :INFO : test_checkout :Future payment saved successfully
+2024-10-14 18:55:27,434 :INFO : test_checkout :Shop Icon clicked successfully
+2024-10-14 18:55:28,751 :INFO : test_checkout :Shop All link clicked successfully
+2024-10-14 18:55:28,770 :INFO : test_checkout :Switched to Category all successfully
+2024-10-14 18:56:38,419 :INFO : test_checkout :Foam Guns from side menu clicked successfully
+2024-10-14 18:56:51,894 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun selected successfully
+2024-10-14 18:57:00,547 :INFO : test_checkout :Carlisle ST1 Air Purge D-02 Spray Gun added to cart successfully
+2024-10-14 18:57:00,869 :INFO : test_checkout :Proceed to checkout clicked successfully
+2024-10-14 18:57:09,008 :INFO : test_checkout :Billing address selected successfully
+2024-10-14 18:57:10,076 :INFO : test_checkout :Business Name entered successfully
+2024-10-14 18:57:11,062 :INFO : test_checkout :Pickup address selected successfully
+2024-10-14 18:57:21,482 :INFO : test_checkout :Everything amount is displayed Correctly
+2024-10-14 18:57:22,679 :INFO : test_checkout :Credit card payment method selected successfully
+2024-10-14 18:57:26,268 :INFO : test_checkout :Credit card number entered successfully
+2024-10-14 18:57:27,229 :INFO : test_checkout :Credit card expiry date entered successfully
+2024-10-14 18:57:27,529 :INFO : test_checkout :Credit card cvc entered successfully
+2024-10-14 18:57:48,454 :INFO : test_checkout :Future payment saved successfully
